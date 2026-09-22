@@ -2,8 +2,8 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import { defineConfig } from 'vite'
 
-// https://vite.dev/config/
+// Relative URLs work in local development and when deployed below /love/ on GitHub Pages.
 export default defineConfig({
-  base: '/love/',
+  base: './',
   plugins: [react(), tailwindcss()],
 })
